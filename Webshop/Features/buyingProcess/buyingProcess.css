@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@800&family=Poppins:wght@700&display=swap');
+@import url('//db.onlinewebfonts.com/c/1fed4454352f201d52b65ca5480afb2d?family=Playlist');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300&display=swap');
+body{
+    overflow: hidden;
+}
+.wholeContainer{
+    display: grid;
+    grid-template-rows: 50px 50px 100px 500px;
+    grid-template-columns: 1440px;
+}
+.buttonSignInContainer{
+    display: grid;
+    grid-template-columns: 50px 440px 810px 20px;
+    background-color: #c2b19c;
+    letter-spacing: 3px;
+    font-family: 'Poppins';
+    align-items: center;
+}
+.linksSignInContainer{
+    display: grid;
+    grid-template-columns: 100px 100px 140px 100px; 
+}
+.iconProfile{
+    margin-top: 5px;
+    height: 40px;
+}
+.secondContainer{
+    display: grid;
+    grid-template-rows: 60px 40px;
+    grid-template-columns: 1400px;
+    text-align: center;
+}
+.digitalText{
+    font-family: 'Alfa Slab One';
+    margin-top: 10px;
+    font-size: 50px;
+    color: #423f32;
+}
+.desireText{
+    font-family: 'Playlist';
+    font-size: 30px;
+    color: #423f32;
+    text-align: center;
+}
+.thirdContainer{
+    display: grid;
+    grid-template-rows: 30px 500px 50px;
+    grid-template-columns: 50px 700px 40px 550px 50px;
+}
+
+.pictureSignIn{
+    display: flex;
+    height: 500px;
+    width: 700px;
+    background-color: #bdb3a5;
+}
+.backButton{
+    background-color: #f1ebe5;
+    font-family: 'Poppins';
+    letter-spacing: 3px;
+    padding: 3px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: none;
+    width: 100px;
+    border-radius: 10px;
+}
+.contentsContainer{
+    background-color: #ebded4;
+    display: grid;
+    grid-template-columns: 550px;
+    grid-template-rows: 150px 70x 180px 150px;
+    text-align: center;
+
+}
+.yourDesignText{
+    text-align: center;
+    font-family: 'Alfa Slab One';
+    -webkit-text-stroke: 1px #69443c;
+    color: #f6f3ee;
+    font-size: 70px;
+    text-transform: uppercase;
+    line-height: 1;
+    z-index: 1;
+    margin-top: 20px;
+}
+.uploadImageContainer{
+    text-align: center;
+}
+.uploadImage{
+    margin-left: -100px;
+    font-family: 'Aleo';
+    position: absolute;
+    margin-top: -25px;
+    z-index: 1;
+    font-size: 18px;
+}
+.inputsContainer{
+    display: grid;
+    grid-template-rows: 70px 70px 70px;
+    grid-template-columns: 200px 350px;
+    text-align: justify;
+    margin-top: -20px;
+}
+.textInputLabel{
+    text-align: right;
+    font-family: 'Aleo';
+    font-size: 20px;
+    margin-top: 15px;
+    margin-right: 30px;
+}
+#colorText{
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-family: 'Aleo';
+    font-size: 15px;
+    margin-left: -10px;
+
+}
+.showTotal{
+    display: flex;
+    padding: 19px;
+    width: 210px;
+    font-size: 15px;
+    border-radius: 20px;
+    margin-left: -10px;
+    margin-top: 10px;
+    background-color: white;
+}
+.preOrderContainer{
+    align-items: center;
+}
+.preOrderButton{
+    width: 150px;
+    height: 60px;
+}
+.preOrderButton{
+    background-color: #c2b19c;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: -60px;
+
+}
+.buttonContents{
+    display: grid;
+    grid-template-columns: 90px 60px;
+    text-align: center;
+}
+.preOrderText{
+    font-family: 'Alfa Slab One';
+    -webkit-text-stroke: 0.5px #69443c;
+    text-shadow: 1px 1px #69443c;
+    color: #f6f3ee;
+    letter-spacing: 3px;
+    margin-top: 3px;
+}
+.handSignWhite{
+    height: 40px;
+    margin-right: 10px;
+}

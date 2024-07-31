@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@800&family=Poppins:wght@700&display=swap');
+@import url('//db.onlinewebfonts.com/c/1fed4454352f201d52b65ca5480afb2d?family=Playlist');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo&display=swap');
+
+body{
+    background-color: #f1ebe5;
+}
+.wholeContainer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(2, 130px);
+    margin-top: 30px;
+
+}
+.firstContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(1, 50px);
+}
+.titleStorage{
+    display: flex;
+	align-items: flex-start;
+    text-align: center;
+    margin-left: 70px;
+
+}
+.titleContainer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(2, 50px);
+
+}
+.featContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(1, 50px);
+}
+.printingText{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 40px;
+    color: #423f32;
+}
+.desireText{
+    font-size: 30px;
+    font-family: 'Playlist';
+    color: #423f32;
+}
+.buttonContainer{
+    display: flex;
+	align-items: flex-start;
+    text-align: center;
+    margin-left: 160px;
+}
+.buttonDesign{
+    background: #bdb3a5;
+    border: 1px solid #bdb3a5;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    width: 120px;
+    margin-left: 250px;
+    border-radius: 50px;
+    margin-top: 20px; 
+}
+.buttonDesign:hover{
+    background: rgb(183, 183, 185);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgb(245, 236, 236);
+}
+.secondContainer{
+    display: flex;
+	align-items: flex-start;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #bdb3a5;
+    width: 70%;
+    height: 580px;
+    margin: auto;
+}
+.registrationContainer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(5, 50px);
+}
+.profilePic{
+    margin-top: 50px;
+    height: 200px;
+}
+.registerText{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+.inputContainer{
+    margin-top: 220px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 60px);
+    text-align: right;
+    align-items: center;
+    margin-left: -130px;
+}
+.inputHolder{
+    font-family: 'Aleo', serif;
+    margin-right: 70px;
+
+}
+.inputText{
+    border: solid;
+    border-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 250px;
+    margin-left: -50px;
+}
+.buttonSubmit{
+    border: solid white;
+    background-color: white;
+    width: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-top: 300px;
+    border-radius: 30px;
+    letter-spacing: 3px;
+}
+.buttonSubmit:hover{
+    background: rgb(183, 183, 185);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgb(245, 236, 236);
+}
+.noAccount{
+    font-family: 'Aleo';
+    margin-top: 300px;
+    text-decoration: underline;
+}

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@800&family=Poppins:wght@700&display=swap');
+@import url('//db.onlinewebfonts.com/c/1fed4454352f201d52b65ca5480afb2d?family=Playlist');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+body{
+    background-color: #f6f3ee; 
+}
+.wholeContainer{
+    display: grid;
+    grid-template-columns: repeat(1, 1r);
+	grid-template-rows: repeat(1, 130px);
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+.firstContainer{
+    display: grid;
+    grid-template-columns: 300px 800px 300px;
+    grid-template-rows: 150px;
+    background-color: #c2b19c;
+    align-items: center;
+}
+.titleContainer{
+    display: grid;
+    grid-template-columns: 100px 150px 50px;
+    grid-template-rows: 130px;
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 100px;
+}
+.handSign{
+    height: 100px;
+}
+.digitalTitleText{
+    font-family: 'Alfa Slab One';
+    font-size: 28px;
+}
+.printDesireText{
+    transform: rotate(-90deg);
+    font-family: 'Playlist';
+    font-size: 15px;
+    width: 100px;
+    margin-bottom: 22px;
+    margin-left: -10px;
+}
+.titleRegisterBuy{
+    display: grid;
+    grid-template-columns: 100px 150px;
+    grid-template-rows: 130px;
+    align-items: center;
+}
+.iconProfile{
+    height: 60px;
+    margin-left: -20px;
+}
+.titleRegisterBuyButton{
+    background-color: #f1ebe5;
+    border: none;
+    padding: 7px;
+    border-radius: 20px;
+    font-family: 'Poppins';
+    width: 180px;
+    margin-left: -60px;
+    letter-spacing: 3px;
+}
+.secondContainer{
+    display: grid;
+    grid-template-rows: 50px 550px;
+    grid-template-columns: 50px 400px 50px 400px 50px 400px 50px;
+}
+.pictureOneTitle{
+    display: flex;
+    background-color: #9a7b6c;
+    width: 400px;
+    height: 550px;
+}
+.pictureTwoTitle{
+    display: flex;
+    background-color: #c2b19c;
+    width: 400px;
+    height: 550px;
+}
+.pictureThreeTitle{
+    display: flex;
+    background-color: #ebded4;
+    width: 400px;
+    height: 550px;
+}

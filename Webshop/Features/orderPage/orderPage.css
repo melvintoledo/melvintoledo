@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@800&family=Poppins:wght@700&display=swap');
+@import url('//db.onlinewebfonts.com/c/1fed4454352f201d52b65ca5480afb2d?family=Playlist');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+
+body{
+    background-color: #f6f3ee;
+}
+.wholeContainer{
+    display: grid;
+    grid-template-rows: 50px 50px 100px 550px;
+    grid-template-columns: repeat(1, 1fr);
+}
+.buttonSignInContainer{
+    display: grid;
+    grid-template-columns: 50px 440px 810px 20px;
+    background-color: #c2b19c;
+    letter-spacing: 3px;
+    font-family: 'Poppins';
+    align-items: center;
+}
+.linksSignInContainer{
+    display: grid;
+    grid-template-columns: 100px 100px 140px 100px; 
+}
+.iconProfile{
+    margin-top: 5px;
+    height: 40px;
+}
+.secondContainer{
+    display: grid;
+    grid-template-rows: 150px;
+    grid-template-columns: 50px 700px 350px 100px 200px;
+    align-items: center;
+    z-index: 1;
+}
+.welcomeGreetCon{
+    text-align: center;
+    font-family: 'Alfa Slab One';
+    -webkit-text-stroke: 1px black;
+    color: #f6f3ee;
+    font-size: 80px;
+
+    line-height: 1;
+    z-index: 1;
+}
+.handSign{
+    height: 115px;
+}
+.digitalTextSign{
+    font-family: 'Alfa Slab One';
+    font-size: 30px;
+    color: #423f32;
+
+}
+.thirdContainer{
+    display: grid;
+    grid-template-columns: 50px 1307px 50px;
+    grid-template-rows: 50px 460px;
+}
+.orderContainer{
+    background-color: #ebded4;
+}
+.pictureContainer{
+    display: flex;
+    background-color: #c2b19c;
+    height: 400px;
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 350px;
+}
+.printDesireSign{
+    font-family: 'Playlist';
+    font-size: 30px;
+    margin-top: -40px;
+    text-align: center;
+}

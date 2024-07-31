@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@800&family=Poppins:wght@700&display=swap');
+@import url('//db.onlinewebfonts.com/c/1fed4454352f201d52b65ca5480afb2d?family=Playlist');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo&display=swap');
+
+body{
+    background-color: #f6f3ee; 
+}
+.wholeContainer{
+    display: grid;
+    grid-template-rows: 30px 150px 570px;
+    grid-template-columns: repeat(1, 1fr);
+}
+.firstContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(1, 50px);
+}
+.titleStorage{
+    display: flex;
+	align-items: flex-start;
+    text-align: center;
+    margin-left: 70px;
+
+}
+.titleContainer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(2, 50px);
+
+}
+.featContainer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(1, 50px);
+}
+.printingText{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 40px;
+    color: #423f32;
+}
+.desireText{
+    font-size: 30px;
+    font-family: 'Playlist';
+    color: #423f32;
+}
+.buttonContainer{
+    display: flex;
+	align-items: flex-start;
+    text-align: center;
+    margin-left: 160px;
+}
+.buttonDesign{
+    background: #bdb3a5;
+    border: 1px solid #bdb3a5;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    width: 120px;
+    margin-left: 250px;
+    border-radius: 50px;
+    margin-top: 20px; 
+}
+.buttonDesign:hover{
+    background: rgb(183, 183, 185);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgb(245, 236, 236);
+} 
+.secondContainer{
+    display: grid;
+    grid-template-rows: 550px;
+    grid-template-columns: 200px 1000px 200px;
+}
+.registrationContainer{
+    background-color: #bdb3a5;
+    display: grid;
+    grid-template-rows: 60px 360px 130px;
+    grid-template-columns: 1000px;
+}
+.registrationTextIcon{
+    display: grid;
+    grid-template-rows: 60px;
+    grid-template-columns: 60px 315px 250px 315px 60px;
+}
+.profilePic{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 90px;
+}
+.registerText{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+.registrationSecond{
+    display: grid;
+    grid-template-columns: 150px 700px 150px;
+    grid-template-rows: 360px;
+}
+.inputContainer{
+    display: grid;
+    grid-template-columns: 270px 430px;
+    grid-template-rows: 60px 60px 60px 60px 60px 60px;
+    align-items: center;
+    text-align: right;
+
+}
+.inputDesign{
+    float: left;
+    border: solid;
+    border-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 250px;
+}
+.classificationText{
+    font-family: 'Aleo', serif;
+    margin-right: 10px;
+}
+.signUpsContainer{
+    display: grid;
+    grid-template-rows: 65px 65px;
+    grid-template-columns: 1000px;
+    align-items: center;
+    text-align: center;
+}
+.buttonSignUp{
+
+}
+.buttonSignUp{
+    background: #FFFFFF;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    width: 120px;
+    border-radius: 50px;
+    letter-spacing: 3px;
+}
+.buttonSignUp:hover{
+    background: rgb(183, 183, 185);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgb(245, 236, 236);
+} 
+.alreadyHave{
+    font-family: 'Aleo';
+    margin-bottom: 40px;
+    text-decoration: underline;
+}

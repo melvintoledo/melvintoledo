@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@800&family=Poppins:wght@700&display=swap');
+@import url('//db.onlinewebfonts.com/c/1fed4454352f201d52b65ca5480afb2d?family=Playlist');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+
+body{
+    background-color: #f6f3ee; 
+}
+
+.wholeContainer{
+    display: grid;
+    grid-template-rows: 50px 50px 700px;
+    grid-template-columns: repeat(1, 1fr);
+}
+.buttonSignInContainer{
+    display: grid;
+    grid-template-columns: 50px 440px 810px 20px;
+    background-color: #c2b19c;
+    letter-spacing: 3px;
+    font-family: 'Poppins';
+    align-items: center;
+}
+.linksSignInContainer{
+    display: grid;
+    grid-template-columns: 100px 100px 140px 100px; 
+}
+.iconProfile{
+    margin-top: 5px;
+    height: 40px;
+}
+.thirdContainer{
+    display: grid;
+    grid-template-rows: 30px 500px 50px;
+    grid-template-columns: 50px 700px 40px 550px 50px;
+}
+.pictureSignIn{
+    display: flex;
+    height: 500px;
+    width: 700px;
+    background-color: #ebded4;
+}
+.textDisplaySignIn{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 115px 385px;
+}
+.logoSignIn{
+    display: grid;
+    grid-template-columns: 150px 100px 150px 20px;
+    grid-template-rows: 115px;
+}
+.handSign{
+    height: 115px;
+}
+.digitalTextSign{
+    font-family: 'Alfa Slab One';
+    font-size: 30px;
+    color: #423f32;
+}
+.printDesireSign{
+    font-family: 'Playlist';
+    font-size: 30px;
+    margin-top: -150px;
+    text-align: center;
+}

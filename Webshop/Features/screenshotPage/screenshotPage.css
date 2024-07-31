@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@800&family=Poppins:wght@700&display=swap');
+@import url('//db.onlinewebfonts.com/c/1fed4454352f201d52b65ca5480afb2d?family=Playlist');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300&display=swap');
+
+body{
+    background-color: #f6f3ee;
+}
+.wholeContainer{
+    display: grid;
+    grid-template-rows: 50px 50px 650px;
+    grid-template-columns: repeat(1, 1fr);
+}
+.buttonSignInContainer{
+    display: grid;
+    grid-template-columns: 50px 440px 810px 20px;
+    background-color: #c2b19c;
+    letter-spacing: 3px;
+    font-family: 'Poppins';
+    align-items: center;
+}
+.linksSignInContainer{
+    display: grid;
+    grid-template-columns: 100px 100px 140px 100px; 
+}
+.iconProfile{
+    margin-top: 5px;
+    height: 40px;
+}
+.secondContainer{
+    display: grid;
+    grid-template-columns: 250px 920px 250px;
+    grid-template-rows: 70px 550px;
+}
+.textContainer{
+    background-color: #bdb3a5;
+    display: grid;
+    grid-template-columns: 920px;
+    grid-template-rows: 170px 10px 70px 280px;
+    border-bottom: 2px black;
+}
+.titleTextContainer{
+    display: grid;
+    grid-template-columns: 320px 600px;
+    grid-template-rows: 170px;
+
+}
+.firstTitleCon{
+    display: grid;
+    grid-template-columns: 120px 200px;
+    grid-template-rows: 170px;
+}
+.pictureSign{
+    margin-top: 30px;
+    margin-left: 20px;
+    height: 130px;
+}
+.digitalTextSign{
+    font-family: 'Alfa Slab One';
+    font-size: 30px;
+    color: #423f32;
+    margin-top: 30px;
+    margin-left: 10px;
+}   
+.paymentSuccessfulText{
+    text-align: center;
+    font-family: 'Alfa Slab One';
+    -webkit-text-stroke: 1px #69443c;
+    color: #f6f3ee;
+    font-size: 70px;
+    margin-top: 25px;
+    line-height: 1;
+    letter-spacing: 5px;
+}
+hr{
+    border: 2px solid black;
+    width: 95%;
+}
+.scheduledDate{
+    display: flex;
+    width: 800px;
+    height: 40px;
+    background-color: #423f32;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Aleo';
+    font-weight: bolder;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 60px;
+}
+.adjustText{
+    margin-top: 5px;
+    margin-left: 55px;
+}
+.instructionTextContainer{
+    display: grid;
+    grid-template-columns: 800px;
+    grid-template-rows: 50px 100px 30px 90px;
+    font-family: 'Aleo';
+    font-weight: bolder;
+    margin-left: 60px;
+}
+.howText{
+    background-color: white;
+    text-align: center;
+    align-self: center;
+    padding: 7px;
+    font-size: 30px;
+}
+.orderedList{
+    background-color: white;
+    margin-top: -15px;
+    font-size: 23px;
+    line-height: 1.2;
+}
+.noteText{
+    background-color: white;
+    font-size: 20px;
+}
+.unOrdered{
+    background-color: white;
+    margin-top: -10px;
+    font-size: 20px;
+}
+.thankYou{
+    font-family: 'Playlist';
+    font-size: 30px;
+    margin-top: -20px;
+    text-align: center;
+}

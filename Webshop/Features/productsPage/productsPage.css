@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@800&family=Poppins:wght@700&display=swap');
+@import url('//db.onlinewebfonts.com/c/1fed4454352f201d52b65ca5480afb2d?family=Playlist');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+
+.wholeContainer{
+    display: grid;
+    grid-template-rows: 50px 50px 100px 500px;
+    grid-template-columns: 1400px;
+}
+.buttonSignInContainer{
+    display: grid;
+    grid-template-columns: 50px 440px 810px 20px;
+    background-color: #c2b19c;
+    letter-spacing: 3px;
+    font-family: 'Poppins';
+    align-items: center;
+}
+.linksSignInContainer{
+    display: grid;
+    grid-template-columns: 100px 100px 140px 100px; 
+}
+.iconProfile{
+    margin-top: 5px;
+    height: 40px;
+}
+.secondContainer{
+    display: grid;
+    grid-template-rows: 60px 40px;
+    grid-template-columns: 1400px;
+    text-align: center;
+}
+.digitalText{
+    font-family: 'Alfa Slab One';
+    margin-top: 10px;
+    font-size: 50px;
+    color: #423f32;
+}
+.desireText{
+    font-family: 'Playlist';
+    font-size: 30px;
+    color: #423f32;
+    text-align: center;
+}
+.thirdContainer{
+    display: grid;
+    grid-template-rows: 30px 500px;
+    grid-template-columns: 50px 1300px 50px;
+}
+.pictureContainer{
+    background-color: #ebded4;
+    align-items: center;
+
+}
+.pictureSlides{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin-top: 15px;
+    height: 470px;
+    margin-left: 60px;
+    column-gap: 100px;
+
+}
+.pictureSlides section {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    height: 470px;
+    align-items: center;
+
+}
+
+.pictureSlides section .pictureItem{
+    padding: 0 1px;
+    transition: 250ms all;
+}
+
+.slidesContainer{
+    display: grid;
+    grid-template-columns: 40px 1120px 40px;
+    align-items: center;
+
+}
+
+
+.insidePicture{
+    display: flex;
+    margin-left: 10px;
+    width: 1100px;
+    height: 470px;
+    background-color: #9a7b6c;
+}
+.leftArrow{
+    width: 40px;  
+}
+.rightArrow{
+    width: 40px;  
+}
+.imaginaryRight{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-left: 1140px;
+    margin-top: -300px;
+}

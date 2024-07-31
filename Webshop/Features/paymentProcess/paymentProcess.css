@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@800&family=Poppins:wght@700&display=swap');
+@import url('//db.onlinewebfonts.com/c/1fed4454352f201d52b65ca5480afb2d?family=Playlist');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300&display=swap');
+
+body{
+    overflow: hidden;
+}
+.wholeContainer{
+    display: grid;
+    grid-template-rows: 50px 50px 100px 500px;
+    grid-template-columns: 1440px;
+}
+.buttonSignInContainer{
+    display: grid;
+    grid-template-columns: 50px 440px 810px 20px;
+    background-color: #c2b19c;
+    letter-spacing: 3px;
+    font-family: 'Poppins';
+    align-items: center;
+}
+.linksSignInContainer{
+    display: grid;
+    grid-template-columns: 100px 100px 140px 100px; 
+}
+.iconProfile{
+    margin-top: 5px;
+    height: 40px;
+}
+.secondContainer{
+    display: grid;
+    grid-template-rows: 60px 40px;
+    grid-template-columns: 1400px;
+    text-align: center;
+}
+.digitalText{
+    font-family: 'Alfa Slab One';
+    margin-top: 10px;
+    font-size: 50px;
+    color: #423f32;
+}
+.desireText{
+    font-family: 'Playlist';
+    font-size: 30px;
+    color: #423f32;
+    text-align: center;
+}
+.thirdContainer{
+    display: grid;
+    grid-template-rows: 30px 500px 50px;
+    grid-template-columns: 60px 416px 40px 834px 60px;
+}
+.barcodeImageContainer{
+    display: grid;
+    grid-template-rows: 450px 50px;
+    grid-template-columns: 416px;
+    
+}
+.scanMeText{
+    text-align: center;
+    font-family: 'Alfa Slab One';
+    color: #423f32;
+    margin-top: 10px;
+    font-size: 45px;
+}
+.gcashBarcode{
+    height: 450px;
+}
+.contentsContainer{
+    background-color: #ebded4;
+    display: grid;
+    grid-template-columns: 834px;
+    grid-template-rows: 30px 150px 240px 80px;
+}
+.backButton{
+    background-color: #9a7b6c;
+    color: white;
+    font-family: 'Poppins';
+    letter-spacing: 3px;
+    padding: 3px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: none;
+    width: 100px;
+    border-radius: 10px;
+}
+.yourDesignText{
+    text-align: center;
+    font-family: 'Alfa Slab One';
+    -webkit-text-stroke: 1px #69443c;
+    color: #f6f3ee;
+    font-size: 70px;
+    text-transform: uppercase;
+    line-height: 1;
+    z-index: 1;
+    margin-top: 20px;
+    letter-spacing: 10px;
+}
+.inputsContainer{
+    display: grid;
+    grid-template-columns: 834px;
+    grid-template-rows: 120px 120px;
+}
+.paymentContainer{
+    display: grid;
+    grid-template-rows: 120px;
+    grid-template-columns: 300px 534px;
+    align-items: center;
+}
+.totalText{
+    font-family: 'Aleo';
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 100px;
+}
+.showTotal{
+    display: flex;
+    width: 100px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 220px;
+    margin-top: -30px;
+}
+.requiredPayment{
+    display: flex;
+    width: 100px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 350px;
+    margin-top: -30px;
+}
+.gcashInfosContainer{
+    display: grid;
+    grid-template-rows: 120px;
+    grid-template-columns: 417px 417px;
+    align-items: center;
+    margin-top: -30px;
+}
+.infosText{
+    font-family: 'Aleo';
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 100px;
+
+}
+.gcashReceipt{
+    font-size: 20px;
+    font-family: 'Aleo';
+    margin-top: 10px;
+    margin-left: 150px;
+}
+.referenceContainer{
+    margin-top: -30px;
+    
+}
+.referenceText{
+    font-family: 'Aleo';
+    font-weight: bolder;
+    font-size: 20px;
+}
+.referenceInput{
+    display: flex;
+    width: 165px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 190px;
+    margin-top: -30px;
+    border: none;
+    
+}
+.preOrderContainer{
+
+    display: grid;
+    grid-template-columns: 834px;
+    grid-template-rows: 80px;
+    text-align: center;
+    
+}
+
+.preOrderButton{
+    width: 220px;
+    height: 60px;
+    
+    background-color: #c2b19c;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 310px;
+    
+    
+
+}
+.buttonContents{
+    display: grid;
+    grid-template-columns: 160px 60px;
+    text-align: center;
+}
+.preOrderText{
+    font-family: 'Alfa Slab One';
+    -webkit-text-stroke: 0.5px #69443c;
+    text-shadow: 1px 1px #69443c;
+    color: #f6f3ee;
+    letter-spacing: 10px;
+    margin-top: 5px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.handSignWhite{
+    height: 40px;
+    margin-right: 10px;
+}
