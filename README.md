@@ -1,6 +1,6 @@
 # Melvin Andrew Capuli Toledo
 
-I am Melvin Andrew Capuli Toledo, a 21-year-old aspiring computer engineer with a deep passion for technology and problem-solving. My goal is to excel in the field of computer engineering, where I can apply my skills and knowledge to develop innovative solutions.
+I am Melvin Andrew Capuli Toledo, an aspiring computer engineer with a deep passion for technology and problem-solving. My goal is to excel in the field of computer engineering, where I can apply my skills and knowledge to develop innovative solutions.
 
 ## Skills & Technologies
 
