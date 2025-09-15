@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthSync SmartRing - Medical-Grade Health Insights</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.7) 100%);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.02);
+        }
+        
+        .ring-spin {
+            animation: spin 20s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .size-guide-step {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        
+        .size-guide-step.active {
+            opacity: 1;
+        }
+        
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .accordion-content.open {
+            max-height: 300px;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-xl font-bold text-gray-900 flex items-center">
+                        <span class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-2">H</span>
+                        HealthSync
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-900 hover:text-blue-600 transition">Home</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-600 transition">How It Works</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-600 transition">Features</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-600 transition">Sizing Guide</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-600 transition">Support</a>
+                </div>
+                <div class="flex items-center">
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full text-sm font-medium transition">
+                        Pre-order Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <video autoplay loop muted playsinline class="hero-video">
+            <source src="https://example.com/ring-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay absolute inset-0"></div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Medical-Grade Health Insights, Worn on Your Finger</h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-8">Track sleep, heart rate, and recovery with accuracy watches can't match.</p>
+            <button class="bg-white hover:bg-gray-100 text-blue-600 font-bold py-3 px-8 rounded-full text-lg transition transform hover:scale-105">
+                Explore the Ring
+            </button>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
+                <div class="flex flex-col items-center">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-2">
+                        <i class="fas fa-truck text-blue-600"></i>
+                    </div>
+                    <span class="font-medium">Free Shipping & Returns</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-2">
+                        <i class="fas fa-shield-alt text-blue-600"></i>
+                    </div>
+                    <span class="font-medium">2-Year Warranty</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-2">
+                        <i class="fas fa-lock text-blue-600"></i>
+                    </div>
+                    <span class="font-medium">Secure Checkout</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-2">
+                        <i class="fas fa-stethoscope text-blue-600"></i>
+                    </div>
+                    <span class="font-medium">Clinically Validated</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-2">
+                        <i class="fas fa-hand-holding-usd text-blue-600"></i>
+                    </div>
+                    <span class="font-medium">Money-Back Guarantee</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Solution -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Finger Beats Wrist</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Traditional wrist trackers struggle with accuracy due to movement and poor contact. Our finger-worn design provides medical-grade precision.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="bg-gray-100 rounded-xl p-6 mb-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-times text-red-500"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Wrist Trackers</h3>
+                        </div>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-arrow-right text-red-500 mt-1 mr-2"></i>
+                                <span>Up to 30% heart rate inaccuracy during movement</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-arrow-right text-red-500 mt-1 mr-2"></i>
+                                <span>Poor sleep tracking due to wrist movement</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-arrow-right text-red-500 mt-1 mr-2"></i>
+                                <span>Bulkier design that can interfere with daily activities</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-blue-50 rounded-xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-check text-green-500"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">HealthSync SmartRing</h3>
+                        </div>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-arrow-right text-green-500 mt-1 mr-2"></i>
+                                <span>98% heart rate accuracy even during exercise</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-arrow-right text-green-500 mt-1 mr-2"></i>
+                                <span>Precise sleep tracking with less movement interference</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-arrow-right text-green-500 mt-1 mr-2"></i>
+                                <span>Sleek, unobtrusive design you'll forget you're wearing</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Advanced Health Tracking</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Everything you need for comprehensive health monitoring in a discreet package.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-8 shadow-sm feature-card transition">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-battery-full text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">7-Day Battery</h3>
+                    <p class="text-gray-600">A full week of continuous tracking on a single charge with our efficient power management.</p>
+                </div>
+                <div class="bg-white rounded-xl p-8 shadow-sm feature-card transition">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-tint text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Waterproof</h3>
+                    <p class="text-gray-600">Swim, shower, and sweat with confidence - rated to 50 meters water resistance.</p>
+                </div>
+                <div class="bg-white rounded-xl p-8 shadow-sm feature-card transition">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-heartbeat text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Heart Rate</h3>
+                    <p class="text-gray-600">Continuous, medical-grade heart rate monitoring with 98% clinical accuracy.</p>
+                </div>
+                <div class="bg-white rounded-xl p-8 shadow-sm feature-card transition">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-lungs text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Blood Oxygen</h3>
+                    <p class="text-gray-600">Track SpO2 levels to monitor respiratory health and recovery.</p>
+                </div>
+                <div class="bg-white rounded-xl p-8 shadow-sm feature-card transition">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-moon text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Sleep Insights</h3>
+                    <p class="text-gray-600">Detailed sleep stages, disturbances, and quality scores to optimize your rest.</p>
+                </div>
+                <div class="bg-white rounded-xl p-8 shadow-sm feature-card transition">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Recovery Metrics</h3>
+                    <p class="text-gray-600">HRV, body temperature, and activity data to guide your training intensity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="relative w-full h-96 mb-8">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <img src="https://via.placeholder.com/500x500" alt="HealthSync SmartRing" class="ring-spin w-64 h-64 object-contain">
+                        </div>
+                        <button class="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg">
+                            <i class="fas fa-sync-alt"></i>
+                        </button>
+                    </div>
+                    <div class="flex justify-center space-x-4">
+                        <button class="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center">
+                            <span class="w-8 h-8 bg-gray-800 rounded-full"></span>
+                        </button>
+                        <button class="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center">
+                            <span class="w-8 h-8 bg-gray-400 rounded-full"></span>
+                        </button>
+                        <button class="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center">
+                            <span class="w-8 h-8 bg-rose-500 rounded-full"></span>
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">HealthSync SmartRing</h2>
+                    <p class="text-xl text-gray-600 mb-8">The most advanced health tracking technology in a discreet, comfortable ring.</p>
+                    
+                    <div class="mb-8">
+                        <span class="text-4xl font-bold">$159</span>
+                        <span class="text-gray-500 line-through ml-2">$199</span>
+                        <span class="bg-green-100 text-green-800 text-sm font-medium ml-2 px-2.5 py-0.5 rounded">Pre-order Price</span>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <div class="flex items-center mb-2">
+                            <div class="flex mr-1">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <span class="text-sm text-gray-600">4.9 (1,243 reviews)</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Estimated delivery: June 15, 2023</p>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <h3 class="font-medium mb-2">Select Size</h3>
+                        <div class="grid grid-cols-5 gap-2">
+                            <button class="border border-gray-300 rounded-lg py-2 text-sm">5</button>
+                            <button class="border border-gray-300 rounded-lg py-2 text-sm">6</button>
+                            <button class="border border-gray-300 rounded-lg py-2 text-sm">7</button>
+                            <button class="border border-gray-300 rounded-lg py-2 text-sm">8</button>
+                            <button class="border border-gray-300 rounded-lg py-2 text-sm">9</button>
+                        </div>
+                        <a href="#" class="text-blue-600 text-sm mt-2 inline-block hover:underline">Find my size</a>
+                    </div>
+                    
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg mb-4 flex items-center justify-center transition transform hover:scale-105">
+                        <i class="fas fa-lock mr-2"></i>
+                        Add to Cart — Free Shipping & Returns
+                    </button>
+                    
+                    <div class="flex items-center text-sm text-gray-600">
+                        <i class="fas fa-shield-alt mr-2 text-blue-500"></i>
+                        <span>2-year warranty included</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Interface -->
+    <section class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Your Health, Simplified</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">The HealthSync app transforms complex health data into actionable insights.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-2xl overflow-hidden shadow-xl">
+                    <img src="https://via.placeholder.com/300x600" alt="App Dashboard" class="w-full">
+                </div>
+                <div class="bg-gray-800 rounded-2xl overflow-hidden shadow-xl">
+                    <img src="https://via.placeholder.com/300x600" alt="Sleep Tracking" class="w-full">
+                </div>
+                <div class="bg-gray-800 rounded-2xl overflow-hidden shadow-xl">
+                    <img src="https://via.placeholder.com/300x600" alt="Heart Rate" class="w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Trusted by Thousands</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">See what our community is saying about their HealthSync experience.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-xl p-8 testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah J." class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Sarah J.</h4>
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The sleep tracking is incredibly accurate. I've tried wrist trackers before but the ring is so much better at detecting when I actually fall asleep versus just lying in bed."</p>
+                    <p class="text-sm text-gray-500">Verified Purchase · 3 months ago</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-8 testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael T." class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Michael T.</h4>
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"As a runner, the heart rate accuracy during exercise is game-changing. My old watch would lose tracking during hard intervals, but the ring stays consistent."</p>
+                    <p class="text-sm text-gray-500">Verified Purchase · 5 months ago</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-8 testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Priya K." class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Priya K.</h4>
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"I barely notice I'm wearing it, which is perfect because I never liked the bulk of smartwatches. The battery life is impressive too - I charge it once a week."</p>
+                    <p class="text-sm text-gray-500">Verified Purchase · 2 months ago</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sizing Guide -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Find Your Perfect Fit</h2>
+                    <p class="text-xl text-gray-600 mb-8">Our interactive sizing guide makes it easy to determine your ideal ring size from home.</p>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <div class="flex mb-6">
+                            <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-3">1</div>
+                            <h3 class="text-lg font-semibold pt-1">Print Our Sizing Tool</h3>
+                        </div>
+                        <div class="flex mb-6">
+                            <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 font-bold mr-3">2</div>
+                            <h3 class="text-lg font-semibold pt-1 text-gray-400">Measure Your Finger</h3>
+                        </div>
+                        <div class="flex">
+                            <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 font-bold mr-3">3</div>
+                            <h3 class="text-lg font-semibold pt-1 text-gray-400">Select Your Size</h3>
+                        </div>
+                    </div>
+                    
+                    <button class="mt-8 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg flex items-center transition">
+                        <i class="fas fa-ruler mr-2"></i>
+                        Start Sizing Guide
+                    </button>
+                </div>
+                <div class="relative">
+                    <img src="https://via.placeholder.com/600x600" alt="Sizing Guide" class="rounded-xl shadow-xl w-full">
+                    <div class="absolute -bottom-4 -right-4 bg-white p-4 rounded-lg shadow-lg">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-question text-blue-600"></i>
+                            </div>
+                            <span class="font-medium">Need help? <a href="#" class="text-blue-600 hover:underline">Chat with us</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600">Everything you need to know before purchasing your HealthSync SmartRing.</p>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="border-b border-gray-200 pb-4">
+                    <button class="flex justify-between items-center w-full text-left font-medium text-lg">
+                        <span>How do I know what size to order?</span>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform"></i>
+                    </button>
+                    <div class="accordion-content mt-2 text-gray-600">
+                        <p>We provide a printable sizing guide and step-by-step instructions to help you measure your finger accurately. If you're between sizes, we recommend sizing up for comfort. You can also visit our sizing guide page for a virtual sizing assistant.</p>
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 pb-4">
+                    <button class="flex justify-between items-center w-full text-left font-medium text-lg">
+                        <span>What's included in the 2-year warranty?</span>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform"></i>
+                    </button>
+                    <div class="accordion-content mt-2 text-gray-600">
+                        <p>Our warranty covers manufacturing defects and normal wear and tear for two years from purchase. This includes battery performance degradation below 70% capacity, sensor malfunctions, and material defects. The warranty does not cover accidental damage or loss.</p>
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 pb-4">
+                    <button class="flex justify-between items-center w-full text-left font-medium text-lg">
+                        <span>How does the return policy work?</span>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform"></i>
+                    </button>
+                    <div class="accordion-content mt-2 text-gray-600">
+                        <p>You can return your HealthSync SmartRing within 30 days of receiving it for a full refund, no questions asked. The ring must be in its original condition with all accessories included. We provide a prepaid return shipping label for your convenience.</p>
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 pb-4">
+                    <button class="flex justify-between items-center w-full text-left font-medium text-lg">
+                        <span>Which smartphones are compatible?</span>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform"></i>
+                    </button>
+                    <div class="accordion-content mt-2 text-gray-600">
+                        <p>The HealthSync app works with iOS 14+ (iPhone 8 and newer) and Android 10+ devices with Bluetooth 5.0 or higher. The app is not currently available for Windows phones or tablets without Bluetooth capability.</p>
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 pb-4">
+                    <button class="flex justify-between items-center w-full text-left font-medium text-lg">
+                        <span>How often does the ring need to be charged?</span>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform"></i>
+                    </button>
+                    <div class="accordion-content mt-2 text-gray-600">
+                        <p>With normal use (continuous heart rate, sleep, and activity tracking), the HealthSync SmartRing typically lasts 7 days on a single charge. Charging takes about 90 minutes from 0-100% using the included wireless charging dock.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-gray-600 mb-6">Still have questions? We're here to help.</p>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg inline-flex items-center transition">
+                    <i class="fas fa-headset mr-2"></i>
+                    Contact Support
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Take Control of Your Health?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Join thousands of HealthSync users experiencing medical-grade health insights with unprecedented comfort.</p>
+            <button class="bg-white hover:bg-gray-100 text-blue-600 font-bold py-4 px-8 rounded-lg text-lg transition transform hover:scale-105">
+                <i class="fas fa-lock mr-2"></i>
+                Pre-order Now — Free Shipping
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <a href="#" class="text-xl font-bold text-white flex items-center mb-6">
+                        <span class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-2">H</span>
+                        HealthSync
+                    </a>
+                    <p class="text-gray-400 mb-4">Medical-grade health insights, worn on your finger.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Shop</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">SmartRing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Accessories</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Gift Cards</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Bulk Orders</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Help Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Sizing Guide</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Returns & Warranty</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Press</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="flex items-center space-x-6 mb-4 md:mb-0">
+                        <span class="text-sm text-gray-400">© 2023 HealthSync. All rights reserved.</span>
+                        <a href="#" class="text-sm text-gray-400 hover:text-white transition">Privacy Policy</a>
+                        <a href="#" class="text-sm text-gray-400 hover:text-white transition">Terms of Service</a>
+                    </div>
+                    <div class="flex space-x-6">
+                        <img src="https://via.placeholder.com/40x25" alt="Visa" class="h-6">
+                        <img src="https://via.placeholder.com/40x25" alt="Mastercard" class="h-6">
+                        <img src="https://via.placeholder.com/40x25" alt="Amex" class="h-6">
+                        <img src="https://via.placeholder.com/40x25" alt="Apple Pay" class="h-6">
+                        <img src="https://via.placeholder.com/40x25" alt="Google Pay" class="h-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Accordion functionality
+        document.querySelectorAll('.border-b button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                content.classList.toggle('open');
+                icon.classList.toggle('transform');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+        
+        // Size guide steps (simplified for demo)
+        let currentStep = 1;
+        const steps = document.querySelectorAll('.size-guide-step');
+        
+        function showStep(step) {
+            steps.forEach((s, index) => {
+                if (index + 1 === step) {
+                    s.classList.add('active');
+                } else {
+                    s.classList.remove('active');
+                }
+            });
+        }
+        
+        // Product image interaction
+        const colorButtons = document.querySelectorAll('.flex.justify-center.space-x-4 button');
+        const mainProductImage = document.querySelector('.ring-spin');
+        
+        colorButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // In a real implementation, this would change the product image
+                colorButtons.forEach(btn => btn.classList.remove('border-blue-500'));
+                button.classList.add('border-blue-500');
+            });
+        });
+        
+        // Testimonial carousel (simplified for demo)
+        let currentTestimonial = 0;
+        const testimonials = document.querySelectorAll('.testimonial-card');
+        
+        function showTestimonial(index) {
+            testimonials.forEach((t, i) => {
+                if (i === index) {
+                    t.classList.remove('hidden');
+                } else {
+                    t.classList.add('hidden');
+                }
+            });
+        }
+        
+        // For mobile menu toggle (not implemented in this demo)
+        function toggleMobileMenu() {
+            // Implementation would go here
+        }
+    </script>
+</body>
+</html>

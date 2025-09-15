@@ -1,0 +1,1749 @@
+<html class="h-full" lang="en">
+
+<head>
+  <meta charSet="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+  <link id="google-fonts-link"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/8e98006f77.js" crossOrigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --accent-color: #F58B36;
+      --accent2-color: #FBB63A;
+      --accent3-color: #8DC63F;
+      --accent4-color: #FF6551;
+      --primary-color: #2D6BBA;
+      --dark-text-color: #1E1E1E;
+      --gray-text-color: #6D6D6D;
+      --button-padding-x: 16px;
+      --button-padding-y: 10px;
+      --font-family-body: 'Open Sans', sans-serif;
+      --light-text-color: #FFFFFF;
+      --dark-border-color: #131A26;
+      --light-border-color: #D0E1F8;
+      --font-family-heading: 'Poppins', sans-serif;
+      --button-rounded-radius: 8px;
+      --dark-background-color: #131A26;
+      --light-background-color: #E8F3FF;
+      --medium-background-color: #D0E1F8;
+      --primary-button-text-color: #FFFFFF;
+      --secondary-button-bg-color: #F3F3F3;
+      --secondary-button-text-color: #2D6BBA;
+      --primary-button-hover-bg-color: #1A4C86;
+      --primary-button-hover-text-color: #FFFFFF;
+      --secondary-button-hover-bg-color: #D9E4F4;
+      --secondary-button-hover-text-color: #2D6BBA;
+    }
+  </style>
+  
+</head>
+
+<body class="h-full bg-white">
+  <div class="frame-root">
+    <div class="frame-content">
+      <div class="[font-family:var(--font-family-body)]">
+        <div>
+          <header id="global-header"
+            class="code-section bg-white border-b border-[var(--light-border-color)] sticky top-0 z-50 backdrop-blur-md bg-white/95">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                  <a href="/" class="block">
+                    <img
+                      src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2fa4ecf6-0f91-4228-0ae7-aed9bf4ae700/public"
+                      alt="HealthSync SmartRing" class="h-16 py-2" data-logo="">
+                  </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8">
+                  <a href="/how-it-works"
+                    class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] font-medium transition-colors duration-200">How
+                    It Works</a>
+                  <a href="/features"
+                    class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] font-medium transition-colors duration-200">Features</a>
+                  <a href="/sizing-guide"
+                    class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] font-medium transition-colors duration-200">Sizing
+                    Guide</a>
+                  <a href="/shop"
+                    class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] font-medium transition-colors duration-200">Shop</a>
+                </nav>
+
+                <!-- Desktop CTA Button -->
+                <div class="hidden lg:flex items-center">
+                  <a href="/shop"
+                    class="bg-[var(--primary-color)] text-[var(--primary-button-text-color)] px-6 py-3 rounded-[var(--button-rounded-radius)] font-semibold hover:bg-[var(--primary-button-hover-bg-color)] transition-colors duration-200 shadow-lg">
+                    Buy Now
+                  </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button
+                  class="lg:hidden p-2 rounded-md text-[var(--dark-text-color)] hover:bg-[var(--light-background-color)] transition-colors duration-200"
+                  data-landingsite-mobile-menu-toggle="">
+                  <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Mobile Navigation Menu -->
+              <div class="lg:hidden hidden" data-landingsite-mobile-menu="">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-[var(--light-border-color)]">
+                  <a href="/how-it-works"
+                    class="block px-3 py-2 rounded-md text-[var(--dark-text-color)] hover:bg-[var(--light-background-color)] font-medium">How
+                    It Works</a>
+                  <a href="/features"
+                    class="block px-3 py-2 rounded-md text-[var(--dark-text-color)] hover:bg-[var(--light-background-color)] font-medium">Features</a>
+                  <a href="/sizing-guide"
+                    class="block px-3 py-2 rounded-md text-[var(--dark-text-color)] hover:bg-[var(--light-background-color)] font-medium">Sizing
+                    Guide</a>
+                  <a href="/shop"
+                    class="block px-3 py-2 rounded-md text-[var(--dark-text-color)] hover:bg-[var(--light-background-color)] font-medium">Shop</a>
+                  <div class="pt-2">
+                    <a href="/shop"
+                      class="block w-full bg-[var(--primary-color)] text-[var(--primary-button-text-color)] px-6 py-3 rounded-[var(--button-rounded-radius)] font-semibold text-center hover:bg-[var(--primary-button-hover-bg-color)] transition-colors duration-200">
+                      Buy Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+        </div>
+        <div>
+          <section id="sp18ihd"
+            class="code-section relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[var(--dark-background-color)] via-[var(--primary-color)] to-[var(--dark-background-color)]">
+            <!-- Background Elements -->
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+            <div class="absolute inset-0">
+              <div
+                class="absolute top-20 left-10 w-72 h-72 bg-[var(--accent-color)] rounded-full opacity-10 blur-3xl animate-pulse">
+              </div>
+              <div
+                class="absolute bottom-20 right-10 w-96 h-96 bg-[var(--accent2-color)] rounded-full opacity-10 blur-3xl animate-pulse animation-delay-1000">
+              </div>
+            </div>
+
+            <!-- Content Container -->
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="text-center lg:text-left">
+                  <h1
+                    class="font-[var(--font-family-heading)] text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-[var(--light-text-color)] mb-6 leading-tight">
+                    Medical-Grade<br>
+                    <span
+                      class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--accent2-color)] to-[var(--accent-color)]">Health
+                      Insights</span><br>
+                    Worn on Your Finger
+                  </h1>
+
+                  <p
+                    class="font-[var(--font-family-body)] text-lg sm:text-xl lg:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                    Track sleep, heart rate, and recovery with accuracy watches can't
+                    match. Experience the future of health monitoring with our premium
+                    smart ring.
+                  </p>
+
+                  <!-- CTA Buttons -->
+                  <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="/shop"
+                      class="group relative inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-[var(--accent2-color)] to-[var(--accent-color)] text-white font-semibold rounded-[var(--button-rounded-radius)] text-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                      <span
+                        class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></span>
+                      <span class="relative flex items-center">
+                        Explore the Ring
+                        <svg class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200"
+                          fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                      </span>
+                    </a>
+
+                    <a href="/features"
+                      class="group inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-[var(--button-rounded-radius)] text-lg hover:bg-white hover:text-[var(--primary-color)] transition-all duration-300">
+                      <span class="flex items-center">
+                        Learn More
+                        <svg class="ml-2 w-5 h-5 group-hover:scale-110 transition-transform duration-200" fill="none"
+                          stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+
+                  <!-- Trust Indicators -->
+                  <div
+                    class="mt-12 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-sm text-gray-300">
+                    <div class="flex items-center">
+                      <svg class="w-5 h-5 text-[var(--accent3-color)] mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      Free Shipping &amp; Returns
+                    </div>
+                    <div class="flex items-center">
+                      <svg class="w-5 h-5 text-[var(--accent3-color)] mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                          d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      2-Year Warranty
+                    </div>
+                    <div class="flex items-center">
+                      <svg class="w-5 h-5 text-[var(--accent3-color)] mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                          d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      Clinically Validated
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Right Content - Product Image -->
+                <div class="relative">
+                  <div class="relative mx-auto max-w-lg">
+                    <!-- Animated Background Ring -->
+                    <div
+                      class="absolute inset-0 rounded-full border-4 border-[var(--accent2-color)] animate-pulse opacity-30">
+                    </div>
+                    <div
+                      class="absolute inset-4 rounded-full border-2 border-[var(--accent-color)] animate-pulse opacity-50 animation-delay-500">
+                    </div>
+
+                    <!-- Main Product Image -->
+                    <div class="relative z-10 p-8">
+                      <img
+                        src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/8f42688b-9c0e-4f38-7d41-9114db183900/publicContain"
+                        alt="Male Hand Wearing Smart Ring on Index Finger On A Blue Background"
+                        data-media="{&quot;id&quot;:&quot;2230797030&quot;,&quot;src&quot;:&quot;iStock&quot;,&quot;type&quot;:&quot;image&quot;}"
+                        class="w-full h-auto transform hover:scale-105 transition-transform duration-700">
+                    </div>
+
+                    <!-- Floating Elements -->
+                    <div
+                      class="absolute -top-6 -right-6 w-16 h-16 bg-gradient-to-r from-[var(--accent-color)] to-[var(--accent2-color)] rounded-full opacity-80 animate-bounce">
+                    </div>
+                    <div
+                      class="absolute -bottom-6 -left-6 w-12 h-12 bg-[var(--accent3-color)] rounded-full opacity-70 animate-bounce animation-delay-1000">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+              <div class="animate-bounce">
+                <svg class="w-6 h-6 text-white opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3">
+                  </path>
+                </svg>
+              </div>
+            </div>
+          </section>
+
+          <section id="srz6fo"
+            class="code-section py-20 lg:py-32 bg-gradient-to-b from-white to-[var(--light-background-color)]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <!-- Section Header -->
+              <div class="text-center mb-16">
+                <div
+                  class="inline-flex items-center bg-gradient-to-r from-[var(--accent4-color)] to-red-400 text-white rounded-full px-6 py-3 mb-6">
+
+                  <span class="font-semibold text-sm">The Problem with Wrist Trackers</span>
+                </div>
+
+                <h2
+                  class="font-[var(--font-family-heading)] text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--dark-text-color)] mb-6">
+                  Why Your Smartwatch
+                  <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--accent4-color)] to-red-400">Isn't
+                    Enough</span>
+                </h2>
+                <p
+                  class="font-[var(--font-family-body)] text-lg sm:text-xl text-[var(--gray-text-color)] max-w-3xl mx-auto leading-relaxed">
+                  Wrist-based trackers suffer from fundamental limitations that affect
+                  accuracy and comfort. Here's why finger-worn technology is the future of
+                  health monitoring.
+                </p>
+              </div>
+
+              <!-- Comparison Grid -->
+              <div class="grid lg:grid-cols-2 gap-12 mb-16">
+                <!-- Problem Side - Wrist Trackers -->
+                <div class="relative">
+                  <div
+                    class="absolute -top-4 -left-4 w-20 h-20 bg-gradient-to-r from-[var(--accent4-color)] to-red-400 rounded-full flex items-center justify-center opacity-90">
+                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </div>
+
+                  <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-3xl p-8 pt-12 border-2 border-red-100">
+                    <h3 class="font-[var(--font-family-heading)] text-2xl font-bold text-red-800 mb-6">
+                      Traditional Wrist Trackers
+                    </h3>
+
+                    <div class="space-y-6">
+                      <div class="flex items-start">
+                        <div
+                          class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                          <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                              clip-rule="evenodd"></path>
+                          </svg>
+                        </div>
+                        <div>
+                          <h4 class="font-semibold text-red-800 mb-2">
+                            Inaccurate Readings
+                          </h4>
+                          <p class="text-red-700 text-sm leading-relaxed">
+                            Movement artifacts and loose fit cause up to 30% error in
+                            heart rate measurements during exercise
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="flex items-start">
+                        <div
+                          class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                          <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                              clip-rule="evenodd"></path>
+                          </svg>
+                        </div>
+                        <div>
+                          <h4 class="font-semibold text-red-800 mb-2">Comfort Issues</h4>
+                          <p class="text-red-700 text-sm leading-relaxed">
+                            Bulky design causes irritation, sweat buildup, and skin
+                            reactions during extended wear
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="flex items-start">
+                        <div
+                          class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                          <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                              clip-rule="evenodd"></path>
+                          </svg>
+                        </div>
+                        <div>
+                          <h4 class="font-semibold text-red-800 mb-2">
+                            Sleep Disruption
+                          </h4>
+                          <p class="text-red-700 text-sm leading-relaxed">
+                            Heavy, uncomfortable design disrupts natural sleep positions
+                            and quality
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="flex items-start">
+                        <div
+                          class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                          <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                              clip-rule="evenodd"></path>
+                          </svg>
+                        </div>
+                        <div>
+                          <h4 class="font-semibold text-red-800 mb-2">Battery Anxiety</h4>
+                          <p class="text-red-700 text-sm leading-relaxed">
+                            Daily charging required, often dying during important tracking
+                            periods
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Solution Side - Smart Ring -->
+                <div class="relative">
+                  <div
+                    class="absolute -top-4 -left-4 w-20 h-20 bg-gradient-to-r from-[var(--accent3-color)] to-green-400 rounded-full flex items-center justify-center opacity-90">
+                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </div>
+
+                  <div
+                    class="bg-gradient-to-br from-green-50 to-blue-50 rounded-3xl p-8 pt-12 border-2 border-green-100">
+                    <h3 class="font-[var(--font-family-heading)] text-2xl font-bold text-green-800 mb-6">
+                      HealthSync SmartRing
+                    </h3>
+
+                    <div class="space-y-6">
+                      <div class="flex items-start">
+                        <div
+                          class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                          <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                              clip-rule="evenodd"></path>
+                          </svg>
+                        </div>
+                        <div>
+                          <h4 class="font-semibold text-green-800 mb-2">
+                            99.8% Accuracy
+                          </h4>
+                          <p class="text-green-700 text-sm leading-relaxed">
+                            Stable finger placement provides consistent contact for
+                            medical-grade precision in all measurements
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="flex items-start">
+                        <div
+                          class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                          <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                              clip-rule="evenodd"></path>
+                          </svg>
+                        </div>
+                        <div>
+                          <h4 class="font-semibold text-green-800 mb-2">
+                            All-Day Comfort
+                          </h4>
+                          <p class="text-green-700 text-sm leading-relaxed">
+                            Lightweight, breathable design feels natural - forget you're
+                            wearing it while getting continuous data
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="flex items-start">
+                        <div
+                          class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                          <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                              clip-rule="evenodd"></path>
+                          </svg>
+                        </div>
+                        <div>
+                          <h4 class="font-semibold text-green-800 mb-2">
+                            Better Sleep Tracking
+                          </h4>
+                          <p class="text-green-700 text-sm leading-relaxed">
+                            Unobtrusive design enables natural sleep while capturing
+                            detailed REM and deep sleep phases
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="flex items-start">
+                        <div
+                          class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                          <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                              clip-rule="evenodd"></path>
+                          </svg>
+                        </div>
+                        <div>
+                          <h4 class="font-semibold text-green-800 mb-2">
+                            Week-Long Battery
+                          </h4>
+                          <p class="text-green-700 text-sm leading-relaxed">
+                            7 days of continuous tracking with just 2 hours of charging -
+                            never miss a measurement
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Visual Comparison -->
+              <div
+                class="bg-gradient-to-r from-[var(--light-background-color)] to-[var(--medium-background-color)] rounded-3xl p-8 lg:p-12">
+                <h3
+                  class="font-[var(--font-family-heading)] text-2xl lg:text-3xl font-bold text-[var(--dark-text-color)] text-center mb-8">
+                  The Difference is Clear
+                </h3>
+
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                  <!-- Wrist Tracker Image -->
+                  <div class="text-center">
+                    <div class="relative mb-4">
+                      <img
+                        src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/a7f0e138-8363-4487-e2e8-5ff012b12200/publicContain"
+                        alt="Man wearing a black smart ring on his finger and holding a smartphone in the other hand"
+                        data-media="{&quot;id&quot;:&quot;2230797115&quot;,&quot;src&quot;:&quot;iStock&quot;,&quot;type&quot;:&quot;image&quot;}"
+                        class="w-full max-w-md mx-auto h-auto rounded-2xl shadow-lg">
+                      <div
+                        class="absolute -top-3 -right-3 bg-green-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg">
+                        ✓
+                      </div>
+                    </div>
+                    <h4 class="font-[var(--font-family-heading)] text-xl font-bold text-[var(--primary-color)] mb-2">
+                      Smart Ring Technology
+                    </h4>
+                    <p class="text-[var(--gray-text-color)]">
+                      Precise, comfortable, invisible health monitoring
+                    </p>
+                  </div>
+
+                  <!-- Comparison Stats -->
+                  <div class="space-y-6">
+                    <div class="flex items-center justify-between bg-white rounded-xl p-4 shadow-sm">
+                      <span class="font-semibold text-[var(--dark-text-color)]">Accuracy</span>
+                      <div class="flex items-center space-x-4">
+                        <div class="text-red-500 text-sm">70-85%</div>
+                        <div class="text-2xl">→</div>
+                        <div class="text-green-500 font-bold">99.8%</div>
+                      </div>
+                    </div>
+
+                    <div class="flex items-center justify-between bg-white rounded-xl p-4 shadow-sm">
+                      <span class="font-semibold text-[var(--dark-text-color)]">Battery Life</span>
+                      <div class="flex items-center space-x-4">
+                        <div class="text-red-500 text-sm">1-2 days</div>
+                        <div class="text-2xl">→</div>
+                        <div class="text-green-500 font-bold">7 days</div>
+                      </div>
+                    </div>
+
+                    <div class="flex items-center justify-between bg-white rounded-xl p-4 shadow-sm">
+                      <span class="font-semibold text-[var(--dark-text-color)]">Sleep Comfort</span>
+                      <div class="flex items-center space-x-4">
+                        <div class="text-red-500 text-sm">Poor</div>
+                        <div class="text-2xl">→</div>
+                        <div class="text-green-500 font-bold">Excellent</div>
+                      </div>
+                    </div>
+
+                    <div class="flex items-center justify-between bg-white rounded-xl p-4 shadow-sm">
+                      <span class="font-semibold text-[var(--dark-text-color)]">Form Factor</span>
+                      <div class="flex items-center space-x-4">
+                        <div class="text-red-500 text-sm">Bulky</div>
+                        <div class="text-2xl">→</div>
+                        <div class="text-green-500 font-bold">Invisible</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bottom CTA -->
+              <div class="text-center mt-16">
+                <p class="text-[var(--gray-text-color)] text-lg mb-6">
+                  Ready to experience the future of health monitoring?
+                </p>
+                <a href="#checkout"
+                  class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-[var(--primary-color)] to-[var(--accent-color)] text-white font-semibold rounded-[var(--button-rounded-radius)] text-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                  <span class="flex items-center">
+                    Upgrade to SmartRing
+                    <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section id="benefits"
+            class="code-section py-20 lg:py-32 bg-gradient-to-b from-white to-[var(--light-background-color)]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <!-- Section Header -->
+              <div class="text-center mb-16">
+                <h2
+                  class="font-[var(--font-family-heading)] text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--dark-text-color)] mb-6">
+                  Advanced Health Tracking
+                  <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--primary-color)] to-[var(--accent-color)]">Built
+                    for Precision</span>
+                </h2>
+                <p
+                  class="font-[var(--font-family-body)] text-lg sm:text-xl text-[var(--gray-text-color)] max-w-3xl mx-auto leading-relaxed">
+                  Experience medical-grade accuracy with our innovative smart ring
+                  technology that monitors your health 24/7 without compromising comfort
+                  or style.
+                </p>
+              </div>
+
+              <!-- Features Grid -->
+              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Feature 1: Heart Rate -->
+                <div
+                  class="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-[var(--light-border-color)]">
+                  <div
+                    class="absolute inset-0 bg-gradient-to-br from-[var(--accent4-color)] to-transparent opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-300">
+                  </div>
+                  <div class="relative z-10">
+                    <div
+                      class="w-16 h-16 bg-gradient-to-r from-[var(--accent4-color)] to-red-400 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-transform duration-300">
+                      <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                          d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                    </div>
+                    <h3 class="font-[var(--font-family-heading)] text-xl font-bold text-[var(--dark-text-color)] mb-3">
+                      Continuous Heart Rate
+                    </h3>
+                    <p class="text-[var(--gray-text-color)] leading-relaxed">
+                      24/7 heart rate monitoring with medical-grade accuracy. Track
+                      resting HR, variability, and exercise zones.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Feature 2: Sleep Tracking -->
+                <div
+                  class="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-[var(--light-border-color)]">
+                  <div
+                    class="absolute inset-0 bg-gradient-to-br from-[var(--primary-color)] to-transparent opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-300">
+                  </div>
+                  <div class="relative z-10">
+                    <div
+                      class="w-16 h-16 bg-gradient-to-r from-[var(--primary-color)] to-blue-400 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-transform duration-300">
+                      <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                      </svg>
+                    </div>
+                    <h3 class="font-[var(--font-family-heading)] text-xl font-bold text-[var(--dark-text-color)] mb-3">
+                      Deep Sleep Analysis
+                    </h3>
+                    <p class="text-[var(--gray-text-color)] leading-relaxed">
+                      Advanced sleep stage tracking including REM, deep, and light sleep
+                      with personalized insights and recommendations.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Feature 3: Battery Life -->
+                <div
+                  class="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-[var(--light-border-color)]">
+                  <div
+                    class="absolute inset-0 bg-gradient-to-br from-[var(--accent3-color)] to-transparent opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-300">
+                  </div>
+                  <div class="relative z-10">
+                    <div
+                      class="w-16 h-16 bg-gradient-to-r from-[var(--accent3-color)] to-green-400 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-transform duration-300">
+                      <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                          d="M10 2a1 1 0 00-1 1v3H6a1 1 0 000 2h3v2a1 1 0 102 0V8h3a1 1 0 100-2h-3V3a1 1 0 00-1-1z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                    </div>
+                    <h3 class="font-[var(--font-family-heading)] text-xl font-bold text-[var(--dark-text-color)] mb-3">
+                      7-Day Battery Life
+                    </h3>
+                    <p class="text-[var(--gray-text-color)] leading-relaxed">
+                      Week-long battery life with fast charging. Spend time living, not
+                      charging your health tracker.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Feature 4: Waterproof -->
+                <div
+                  class="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-[var(--light-border-color)]">
+                  <div
+                    class="absolute inset-0 bg-gradient-to-br from-[var(--accent2-color)] to-transparent opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-300">
+                  </div>
+                  <div class="relative z-10">
+                    <div
+                      class="w-16 h-16 bg-gradient-to-r from-[var(--accent2-color)] to-yellow-400 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-transform duration-300">
+                      <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                          d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                    </div>
+                    <h3 class="font-[var(--font-family-heading)] text-xl font-bold text-[var(--dark-text-color)] mb-3">
+                      Waterproof Design
+                    </h3>
+                    <p class="text-[var(--gray-text-color)] leading-relaxed">
+                      Swim, shower, and sweat without worry. IP68 rating ensures your ring
+                      works in any environment.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Feature 5: Recovery Metrics -->
+                <div
+                  class="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-[var(--light-border-color)]">
+                  <div
+                    class="absolute inset-0 bg-gradient-to-br from-[var(--accent-color)] to-transparent opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-300">
+                  </div>
+                  <div class="relative z-10">
+                    <div
+                      class="w-16 h-16 bg-gradient-to-r from-[var(--accent-color)] to-orange-400 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-transform duration-300">
+                      <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                          d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                    </div>
+                    <h3 class="font-[var(--font-family-heading)] text-xl font-bold text-[var(--dark-text-color)] mb-3">
+                      Recovery Insights
+                    </h3>
+                    <p class="text-[var(--gray-text-color)] leading-relaxed">
+                      Personalized recovery metrics help optimize your training and ensure
+                      you're ready for peak performance.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Feature 6: Blood Oxygen -->
+                <div
+                  class="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-[var(--light-border-color)]">
+                  <div
+                    class="absolute inset-0 bg-gradient-to-br from-[var(--primary-color)] to-transparent opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-300">
+                  </div>
+                  <div class="relative z-10">
+                    <div
+                      class="w-16 h-16 bg-gradient-to-r from-[var(--primary-color)] to-indigo-400 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-transform duration-300">
+                      <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                    </div>
+                    <h3 class="font-[var(--font-family-heading)] text-xl font-bold text-[var(--dark-text-color)] mb-3">
+                      Blood Oxygen Monitoring
+                    </h3>
+                    <p class="text-[var(--gray-text-color)] leading-relaxed">
+                      Monitor your SpO2 levels throughout the day and night for
+                      comprehensive health insights and altitude tracking.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Image Showcase -->
+              <div class="relative">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                  <div class="lg:w-1/2">
+                    <img
+                      src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/02507637-3fc0-4f6b-b4d3-bf118cbcde00/public"
+                      alt="3d rendering of smart rings and a smartphone. they can create a seamless and intuitive user experience."
+                      data-media="{&quot;id&quot;:&quot;2183810375&quot;,&quot;src&quot;:&quot;iStock&quot;,&quot;type&quot;:&quot;image&quot;}"
+                      class="w-full h-auto rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-700">
+                  </div>
+                  <div class="lg:w-1/2 space-y-8">
+                    <div>
+                      <h3
+                        class="font-[var(--font-family-heading)] text-2xl lg:text-3xl font-bold text-[var(--dark-text-color)] mb-4">
+                        Seamless App Integration
+                      </h3>
+                      <p class="text-[var(--gray-text-color)] text-lg leading-relaxed mb-6">
+                        Connect with our intuitive smartphone app for detailed analytics,
+                        personalized insights, and easy data sharing with healthcare
+                        providers.
+                      </p>
+                      <a href="/features"
+                        class="inline-flex items-center text-[var(--primary-color)] font-semibold hover:text-[var(--primary-button-hover-bg-color)] transition-colors duration-200">
+                        Explore All Features
+                        <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="featured_pricing"
+            class="code-section py-20 bg-gradient-to-r from-[var(--dark-background-color)] via-[var(--primary-color)] to-[var(--dark-background-color)] relative overflow-hidden">
+            <!-- Background Elements -->
+            <div class="absolute inset-0">
+              <div class="absolute top-10 left-20 w-64 h-64 bg-[var(--accent-color)] rounded-full opacity-10 blur-3xl">
+              </div>
+              <div
+                class="absolute bottom-10 right-20 w-80 h-80 bg-[var(--accent2-color)] rounded-full opacity-10 blur-3xl">
+              </div>
+            </div>
+
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Content - Product Image -->
+                <div class="relative">
+                  <div class="relative mx-auto max-w-lg">
+                    <!-- Animated Background Ring -->
+                    <div
+                      class="absolute inset-0 rounded-full border-4 border-[var(--accent2-color)] animate-pulse opacity-30">
+                    </div>
+                    <div
+                      class="absolute inset-4 rounded-full border-2 border-[var(--accent-color)] animate-pulse opacity-50 animation-delay-500">
+                    </div>
+
+                    <!-- Main Product Image -->
+                    <div class="relative z-10 p-8">
+                      <img
+                        src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/50931882-3bfe-40f8-0db2-bf85e838cb00/public"
+                        alt="Futuristic metallic rings with glowing blue accents on a dark reflective surface, showcasing modern technology design."
+                        data-media="{&quot;id&quot;:&quot;2187301274&quot;,&quot;src&quot;:&quot;iStock&quot;,&quot;type&quot;:&quot;image&quot;}"
+                        class="w-full h-auto transform hover:scale-105 transition-transform duration-700">
+                    </div>
+
+                    <!-- Floating Elements -->
+                    <div
+                      class="absolute -top-6 -right-6 w-16 h-16 bg-gradient-to-r from-[var(--accent-color)] to-[var(--accent2-color)] rounded-full opacity-80 animate-bounce">
+                    </div>
+                    <div
+                      class="absolute -bottom-6 -left-6 w-12 h-12 bg-[var(--accent3-color)] rounded-full opacity-70 animate-bounce animation-delay-1000">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Right Content - Product Details & Checkout -->
+                <div class="text-center lg:text-left">
+                  <!-- Product Badge -->
+                  <div class="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
+                    <svg class="w-5 h-5 text-[var(--accent3-color)] mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 1.414L10.586 9.5H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="text-white text-sm font-medium">Medical-Grade Precision</span>
+                  </div>
+
+                  <!-- Product Name -->
+                  <h2
+                    class="font-[var(--font-family-heading)] text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--light-text-color)] mb-4 leading-tight">
+                    HealthSync SmartRing
+                  </h2>
+
+                  <!-- Price -->
+                  <div class="mb-6">
+                    <div class="text-4xl font-bold text-[var(--accent2-color)] mb-2">
+                      $299
+                    </div>
+                    <div class="text-white/80 text-lg">
+                      or pay in 4 interest-free installments of
+                      <span class="font-semibold text-[var(--accent2-color)]">$74.75</span>
+                    </div>
+                  </div>
+
+                  <!-- Product Options -->
+                  <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 mb-8 border border-white/10">
+                    <!-- Size Selection -->
+                    <div class="mb-6">
+                      <label class="block text-white font-semibold mb-3">Size</label>
+                      <div class="grid grid-cols-5 gap-2">
+                        <button
+                          class="w-full h-12 bg-white/10 hover:bg-[var(--accent2-color)] border border-white/20 hover:border-[var(--accent2-color)] rounded-lg text-white font-semibold transition-all duration-200 hover:scale-105">
+                          6
+                        </button>
+                        <button
+                          class="w-full h-12 bg-white/10 hover:bg-[var(--accent2-color)] border border-white/20 hover:border-[var(--accent2-color)] rounded-lg text-white font-semibold transition-all duration-200 hover:scale-105">
+                          7
+                        </button>
+                        <button
+                          class="w-full h-12 bg-[var(--accent2-color)] border border-[var(--accent2-color)] rounded-lg text-white font-semibold">
+                          8
+                        </button>
+                        <button
+                          class="w-full h-12 bg-white/10 hover:bg-[var(--accent2-color)] border border-white/20 hover:border-[var(--accent2-color)] rounded-lg text-white font-semibold transition-all duration-200 hover:scale-105">
+                          9
+                        </button>
+                        <button
+                          class="w-full h-12 bg-white/10 hover:bg-[var(--accent2-color)] border border-white/20 hover:border-[var(--accent2-color)] rounded-lg text-white font-semibold transition-all duration-200 hover:scale-105">
+                          10
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Color Selection -->
+                    <div class="mb-6">
+                      <label class="block text-white font-semibold mb-3">Color</label>
+                      <div class="flex gap-4">
+                        <button
+                          class="group flex items-center space-x-2 bg-white/10 hover:bg-white/20 border border-white/20 hover:border-white/40 rounded-lg px-4 py-3 transition-all duration-200">
+                          <div class="w-6 h-6 bg-gray-800 rounded-full border border-white/30"></div>
+                          <span class="text-white font-medium">Black</span>
+                        </button>
+                        <button
+                          class="group flex items-center space-x-2 bg-white/10 hover:bg-white/20 border-2 border-[var(--accent2-color)] rounded-lg px-4 py-3 transition-all duration-200">
+                          <div
+                            class="w-6 h-6 bg-gradient-to-r from-pink-400 to-yellow-400 rounded-full border border-white/30">
+                          </div>
+                          <span class="text-white font-medium">Rose Gold</span>
+                        </button>
+                        <button
+                          class="group flex items-center space-x-2 bg-white/10 hover:bg-white/20 border border-white/20 hover:border-white/40 rounded-lg px-4 py-3 transition-all duration-200">
+                          <div
+                            class="w-6 h-6 bg-gradient-to-r from-gray-200 to-gray-400 rounded-full border border-white/30">
+                          </div>
+                          <span class="text-white font-medium">Silver</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Quantity -->
+                    <div class="mb-6">
+                      <label class="block text-white font-semibold mb-3">Quantity</label>
+                      <div class="flex items-center space-x-4">
+                        <button
+                          class="w-12 h-12 bg-white/10 hover:bg-white/20 border border-white/20 rounded-lg text-white font-semibold text-xl transition-all duration-200">
+                          -
+                        </button>
+                        <input type="number" value="1" min="1" max="10"
+                          class="w-20 h-12 bg-white/10 border border-white/20 rounded-lg text-white text-center font-semibold focus:outline-none focus:ring-2 focus:ring-[var(--accent2-color)] focus:border-transparent">
+                        <button
+                          class="w-12 h-12 bg-white/10 hover:bg-white/20 border border-white/20 rounded-lg text-white font-semibold text-xl transition-all duration-200">
+                          +
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Add to Cart Button -->
+                  <div class="space-y-4 mb-6">
+                    <button
+                      class="group w-full inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-[var(--accent2-color)] to-[var(--accent-color)] text-white font-bold rounded-[var(--button-rounded-radius)] text-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+                      <svg class="mr-3 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.5 1.5M7 13l1.5 1.5m0 0L10 16m-2.5-1.5L10 16m0 0l2.5-1.5M10 16l2.5-1.5">
+                        </path>
+                      </svg>
+                      <span class="flex items-center">
+                        Add to Cart — Free Shipping &amp; Returns
+                        <svg class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200"
+                          fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                      </span>
+                    </button>
+
+                    <!-- More Payment Options -->
+                    <button
+                      class="w-full inline-flex items-center justify-center px-8 py-3 border-2 border-white text-white font-semibold rounded-[var(--button-rounded-radius)] text-lg hover:bg-white hover:text-[var(--primary-color)] transition-all duration-300">
+                      <svg class="mr-3 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z">
+                        </path>
+                      </svg>
+                      More Payment Options
+                    </button>
+                  </div>
+
+                  <!-- Trust Badges -->
+                  <div class="flex flex-wrap items-center justify-center lg:justify-start gap-6 text-sm text-gray-300">
+                    <div class="flex items-center">
+                      <svg class="w-5 h-5 text-[var(--accent3-color)] mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      2-Year Warranty
+                    </div>
+                    <div class="flex items-center">
+                      <svg class="w-5 h-5 text-[var(--accent3-color)] mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                          d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      60-Day Money Back
+                    </div>
+                    <div class="flex items-center">
+                      <svg class="w-5 h-5 text-[var(--accent3-color)] mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                          d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      SSL Secure Checkout
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s8kmm8x" class="code-section py-20 lg:py-32 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <!-- Section Header -->
+              <div class="text-center mb-16">
+                <div
+                  class="inline-flex items-center bg-gradient-to-r from-[var(--light-background-color)] to-[var(--medium-background-color)] rounded-full px-6 py-3 mb-6">
+                  <div class="flex items-center mr-3">
+                    <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                    <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                    <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                    <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                    <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                  </div>
+                  <span class="text-[var(--dark-text-color)] font-semibold text-sm">4.9/5 from 2,847 reviews</span>
+                </div>
+
+                <h2
+                  class="font-[var(--font-family-heading)] text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--dark-text-color)] mb-6">
+                  Trusted by
+                  <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--primary-color)] to-[var(--accent-color)]">Health
+                    Enthusiasts</span>
+                  Worldwide
+                </h2>
+                <p
+                  class="font-[var(--font-family-body)] text-lg sm:text-xl text-[var(--gray-text-color)] max-w-3xl mx-auto leading-relaxed">
+                  Join thousands of users who have transformed their health monitoring
+                  with HealthSync SmartRing
+                </p>
+              </div>
+
+              <!-- Reviews Carousel -->
+              <div class="relative" data-landingsite-carousel="">
+                <!-- Carousel Container -->
+                <div class="overflow-hidden">
+                  <div class="flex transition-transform duration-500 ease-in-out">
+                    <!-- Review 1 -->
+                    <div class="w-full flex-shrink-0 px-4" data-landingsite-carousel-item="">
+                      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div
+                          class="bg-gradient-to-br from-white to-[var(--light-background-color)] rounded-3xl p-8 shadow-lg border border-[var(--light-border-color)] transform hover:-translate-y-1 transition-all duration-300">
+                          <div class="flex items-center mb-4">
+                            <img
+                              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&amp;h=60&amp;fit=crop&amp;crop=face&amp;auto=format&amp;q=80"
+                              alt="Michael Chen" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                              <h4 class="font-[var(--font-family-heading)] font-semibold text-[var(--dark-text-color)]">
+                                Michael Chen
+                              </h4>
+                              <p class="text-sm text-[var(--gray-text-color)]">
+                                Marathon Runner
+                              </p>
+                            </div>
+                          </div>
+                          <div class="flex items-center mb-4">
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                          </div>
+                          <p class="text-[var(--gray-text-color)] leading-relaxed">
+                            "The accuracy is incredible! Finally found a tracker that
+                            doesn't slip during runs. My sleep insights helped me improve
+                            my recovery by 40%."
+                          </p>
+                        </div>
+
+                        <div
+                          class="bg-gradient-to-br from-white to-[var(--light-background-color)] rounded-3xl p-8 shadow-lg border border-[var(--light-border-color)] transform hover:-translate-y-1 transition-all duration-300">
+                          <div class="flex items-center mb-4">
+                            <img
+                              src="https://images.unsplash.com/photo-1494790108755-2616b612b977?w=60&amp;h=60&amp;fit=crop&amp;crop=face&amp;auto=format&amp;q=80"
+                              alt="Sarah Williams" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                              <h4 class="font-[var(--font-family-heading)] font-semibold text-[var(--dark-text-color)]">
+                                Sarah Williams
+                              </h4>
+                              <p class="text-sm text-[var(--gray-text-color)]">
+                                Healthcare Professional
+                              </p>
+                            </div>
+                          </div>
+                          <div class="flex items-center mb-4">
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                          </div>
+                          <p class="text-[var(--gray-text-color)] leading-relaxed">
+                            "As a nurse, I need reliable health data. This ring delivers
+                            medical-grade accuracy while being comfortable enough to wear
+                            24/7."
+                          </p>
+                        </div>
+
+                        <div
+                          class="bg-gradient-to-br from-white to-[var(--light-background-color)] rounded-3xl p-8 shadow-lg border border-[var(--light-border-color)] transform hover:-translate-y-1 transition-all duration-300">
+                          <div class="flex items-center mb-4">
+                            <img
+                              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&amp;h=60&amp;fit=crop&amp;crop=face&amp;auto=format&amp;q=80"
+                              alt="David Rodriguez" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                              <h4 class="font-[var(--font-family-heading)] font-semibold text-[var(--dark-text-color)]">
+                                David Rodriguez
+                              </h4>
+                              <p class="text-sm text-[var(--gray-text-color)]">
+                                Tech Executive
+                              </p>
+                            </div>
+                          </div>
+                          <div class="flex items-center mb-4">
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                          </div>
+                          <p class="text-[var(--gray-text-color)] leading-relaxed">
+                            "Battery life is outstanding - 7 days as promised. The app is
+                            intuitive and the insights have genuinely improved my daily
+                            routine."
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="w-full flex-shrink-0 px-4" data-landingsite-carousel-item="">
+                      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div
+                          class="bg-gradient-to-br from-white to-[var(--light-background-color)] rounded-3xl p-8 shadow-lg border border-[var(--light-border-color)] transform hover:-translate-y-1 transition-all duration-300">
+                          <div class="flex items-center mb-4">
+                            <img
+                              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&amp;h=60&amp;fit=crop&amp;crop=face&amp;auto=format&amp;q=80"
+                              alt="Emily Thompson" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                              <h4 class="font-[var(--font-family-heading)] font-semibold text-[var(--dark-text-color)]">
+                                Emily Thompson
+                              </h4>
+                              <p class="text-sm text-[var(--gray-text-color)]">
+                                Yoga Instructor
+                              </p>
+                            </div>
+                          </div>
+                          <div class="flex items-center mb-4">
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                          </div>
+                          <p class="text-[var(--gray-text-color)] leading-relaxed">
+                            "Perfect for my active lifestyle. Completely waterproof - I
+                            wear it during hot yoga and swimming. The sleep tracking
+                            changed my life!"
+                          </p>
+                        </div>
+
+                        <div
+                          class="bg-gradient-to-br from-white to-[var(--light-background-color)] rounded-3xl p-8 shadow-lg border border-[var(--light-border-color)] transform hover:-translate-y-1 transition-all duration-300">
+                          <div class="flex items-center mb-4">
+                            <img
+                              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=60&amp;h=60&amp;fit=crop&amp;crop=face&amp;auto=format&amp;q=80"
+                              alt="James Parker" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                              <h4 class="font-[var(--font-family-heading)] font-semibold text-[var(--dark-text-color)]">
+                                James Parker
+                              </h4>
+                              <p class="text-sm text-[var(--gray-text-color)]">
+                                Fitness Enthusiast
+                              </p>
+                            </div>
+                          </div>
+                          <div class="flex items-center mb-4">
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                          </div>
+                          <p class="text-[var(--gray-text-color)] leading-relaxed">
+                            "Switched from my smartwatch and never looked back. The ring
+                            is so much more comfortable and the data is surprisingly
+                            detailed."
+                          </p>
+                        </div>
+
+                        <div
+                          class="bg-gradient-to-br from-white to-[var(--light-background-color)] rounded-3xl p-8 shadow-lg border border-[var(--light-border-color)] transform hover:-translate-y-1 transition-all duration-300">
+                          <div class="flex items-center mb-4">
+                            <img
+                              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=60&amp;h=60&amp;fit=crop&amp;crop=face&amp;auto=format&amp;q=80"
+                              alt="Lisa Chang" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                              <h4 class="font-[var(--font-family-heading)] font-semibold text-[var(--dark-text-color)]">
+                                Lisa Chang
+                              </h4>
+                              <p class="text-sm text-[var(--gray-text-color)]">
+                                Busy Mom
+                              </p>
+                            </div>
+                          </div>
+                          <div class="flex items-center mb-4">
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                          </div>
+                          <p class="text-[var(--gray-text-color)] leading-relaxed">
+                            "Finally a health tracker that works around my hectic
+                            schedule. Set and forget - it just works. The recovery
+                            insights are eye-opening."
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="w-full flex-shrink-0 px-4" data-landingsite-carousel-item="">
+                      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div
+                          class="bg-gradient-to-br from-white to-[var(--light-background-color)] rounded-3xl p-8 shadow-lg border border-[var(--light-border-color)] transform hover:-translate-y-1 transition-all duration-300">
+                          <div class="flex items-center mb-4">
+                            <img
+                              src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=60&amp;h=60&amp;fit=crop&amp;crop=face&amp;auto=format&amp;q=80"
+                              alt="Robert Kim" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                              <h4 class="font-[var(--font-family-heading)] font-semibold text-[var(--dark-text-color)]">
+                                Robert Kim
+                              </h4>
+                              <p class="text-sm text-[var(--gray-text-color)]">
+                                Cardiology Patient
+                              </p>
+                            </div>
+                          </div>
+                          <div class="flex items-center mb-4">
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                          </div>
+                          <p class="text-[var(--gray-text-color)] leading-relaxed">
+                            "My cardiologist recommended this after seeing the accuracy
+                            reports. It helps me monitor my heart rate variability with
+                            medical precision."
+                          </p>
+                        </div>
+
+                        <div
+                          class="bg-gradient-to-br from-white to-[var(--light-background-color)] rounded-3xl p-8 shadow-lg border border-[var(--light-border-color)] transform hover:-translate-y-1 transition-all duration-300">
+                          <div class="flex items-center mb-4">
+                            <img
+                              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=60&amp;h=60&amp;fit=crop&amp;crop=face&amp;auto=format&amp;q=80"
+                              alt="Maria Gonzalez" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                              <h4 class="font-[var(--font-family-heading)] font-semibold text-[var(--dark-text-color)]">
+                                Maria Gonzalez
+                              </h4>
+                              <p class="text-sm text-[var(--gray-text-color)]">
+                                Sleep Specialist
+                              </p>
+                            </div>
+                          </div>
+                          <div class="flex items-center mb-4">
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                          </div>
+                          <p class="text-[var(--gray-text-color)] leading-relaxed">
+                            "I recommend this to my patients. The sleep stage accuracy
+                            rivals our lab equipment. Impressive technology in such a
+                            small device."
+                          </p>
+                        </div>
+
+                        <div
+                          class="bg-gradient-to-br from-white to-[var(--light-background-color)] rounded-3xl p-8 shadow-lg border border-[var(--light-border-color)] transform hover:-translate-y-1 transition-all duration-300">
+                          <div class="flex items-center mb-4">
+                            <img
+                              src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=60&amp;h=60&amp;fit=crop&amp;crop=face&amp;auto=format&amp;q=80"
+                              alt="Alex Turner" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                              <h4 class="font-[var(--font-family-heading)] font-semibold text-[var(--dark-text-color)]">
+                                Alex Turner
+                              </h4>
+                              <p class="text-sm text-[var(--gray-text-color)]">
+                                Professional Athlete
+                              </p>
+                            </div>
+                          </div>
+                          <div class="flex items-center mb-4">
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                            <i class="fas fa-star text-[var(--accent2-color)]"></i>
+                          </div>
+                          <p class="text-[var(--gray-text-color)] leading-relaxed">
+                            "Game changer for my training. The recovery metrics are spot
+                            on and help me optimize my performance. Worth every penny."
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Navigation Controls -->
+                <div class="flex justify-center items-center mt-12 space-x-4">
+                  <button
+                    class="w-12 h-12 bg-white border-2 border-[var(--light-border-color)] rounded-full flex items-center justify-center hover:bg-[var(--light-background-color)] hover:border-[var(--primary-color)] transition-all duration-200 group"
+                    data-landingsite-carousel-controls-left="">
+                    <svg class="w-5 h-5 text-[var(--gray-text-color)] group-hover:text-[var(--primary-color)]"
+                      fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                  </button>
+
+                  <ul class="flex items-center justify-center gap-3" data-landingsite-carousel-controls-index="">
+                    <li class="h-3 w-3 rounded-full bg-[var(--primary-color)]"></li>
+                  </ul>
+
+                  <button
+                    class="w-12 h-12 bg-white border-2 border-[var(--light-border-color)] rounded-full flex items-center justify-center hover:bg-[var(--light-background-color)] hover:border-[var(--primary-color)] transition-all duration-200 group"
+                    data-landingsite-carousel-controls-right="">
+                    <svg class="w-5 h-5 text-[var(--gray-text-color)] group-hover:text-[var(--primary-color)]"
+                      fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Bottom Stats -->
+              <div
+                class="mt-20 bg-gradient-to-r from-[var(--light-background-color)] to-[var(--medium-background-color)] rounded-3xl p-8 lg:p-12">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                  <div>
+                    <div class="text-3xl lg:text-4xl font-bold text-[var(--primary-color)] mb-2">
+                      50K+
+                    </div>
+                    <div class="text-[var(--gray-text-color)] text-sm lg:text-base">
+                      Happy Customers
+                    </div>
+                  </div>
+                  <div>
+                    <div class="text-3xl lg:text-4xl font-bold text-[var(--primary-color)] mb-2">
+                      99.8%
+                    </div>
+                    <div class="text-[var(--gray-text-color)] text-sm lg:text-base">
+                      Satisfaction Rate
+                    </div>
+                  </div>
+                  <div>
+                    <div class="text-3xl lg:text-4xl font-bold text-[var(--primary-color)] mb-2">
+                      4.9★
+                    </div>
+                    <div class="text-[var(--gray-text-color)] text-sm lg:text-base">
+                      Average Rating
+                    </div>
+                  </div>
+                  <div>
+                    <div class="text-3xl lg:text-4xl font-bold text-[var(--primary-color)] mb-2">
+                      24/7
+                    </div>
+                    <div class="text-[var(--gray-text-color)] text-sm lg:text-base">
+                      Customer Support
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="ssf6elc"
+            class="code-section py-20 lg:py-32 bg-gradient-to-b from-[var(--light-background-color)] to-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+              <!-- Section Header -->
+              <div class="text-center mb-16">
+                <h2
+                  class="font-[var(--font-family-heading)] text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--dark-text-color)] mb-6">
+                  Frequently Asked
+                  <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--primary-color)] to-[var(--accent-color)]">Questions</span>
+                </h2>
+                <p
+                  class="font-[var(--font-family-body)] text-lg sm:text-xl text-[var(--gray-text-color)] max-w-2xl mx-auto leading-relaxed">
+                  Everything you need to know about HealthSync SmartRing before making
+                  your purchase
+                </p>
+              </div>
+
+              <!-- FAQ Items -->
+              <div class="space-y-4" data-landingsite-faq="">
+                <!-- FAQ Item 1 -->
+                <div
+                  class="bg-white border border-[var(--light-border-color)] rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300"
+                  data-landingsite-faq-item="">
+                  <button
+                    class="w-full px-6 py-6 text-left flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-inset rounded-2xl"
+                    data-landingsite-faq-question="">
+                    <span class="font-[var(--font-family-heading)] text-lg font-semibold text-[var(--dark-text-color)]">
+                      How accurate is the HealthSync SmartRing compared to medical
+                      devices?
+                    </span>
+                    <i
+                      class="fa-regular fa-chevron-down text-[var(--primary-color)] transition-transform duration-300"></i>
+                  </button>
+                  <div class="px-6 pb-6" data-landingsite-faq-answer="">
+                    <p class="text-[var(--gray-text-color)] leading-relaxed">
+                      Our SmartRing achieves 99.8% accuracy for heart rate monitoring and
+                      sleep tracking, comparable to medical-grade devices. The ring's
+                      position on your finger provides more stable readings than
+                      wrist-based trackers, as it's less affected by movement and external
+                      factors.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div
+                  class="bg-white border border-[var(--light-border-color)] rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300"
+                  data-landingsite-faq-item="">
+                  <button
+                    class="w-full px-6 py-6 text-left flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-inset rounded-2xl"
+                    data-landingsite-faq-question="">
+                    <span class="font-[var(--font-family-heading)] text-lg font-semibold text-[var(--dark-text-color)]">
+                      What if I order the wrong size?
+                    </span>
+                    <i
+                      class="fa-regular fa-chevron-down text-[var(--primary-color)] transition-transform duration-300"></i>
+                  </button>
+                  <div class="px-6 pb-6" data-landingsite-faq-answer="">
+                    <p class="text-[var(--gray-text-color)] leading-relaxed">
+                      We offer a 30-day exchange guarantee for size exchanges. If your
+                      ring doesn't fit perfectly, we'll send you a new size at no
+                      additional cost. We also provide a free sizing kit to ensure you get
+                      the right fit before ordering.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div
+                  class="bg-white border border-[var(--light-border-color)] rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300"
+                  data-landingsite-faq-item="">
+                  <button
+                    class="w-full px-6 py-6 text-left flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-inset rounded-2xl"
+                    data-landingsite-faq-question="">
+                    <span class="font-[var(--font-family-heading)] text-lg font-semibold text-[var(--dark-text-color)]">
+                      How long does the battery last and how do I charge it?
+                    </span>
+                    <i
+                      class="fa-regular fa-chevron-down text-[var(--primary-color)] transition-transform duration-300"></i>
+                  </button>
+                  <div class="px-6 pb-6" data-landingsite-faq-answer="">
+                    <p class="text-[var(--gray-text-color)] leading-relaxed">
+                      The battery lasts up to 7 days with normal use. Charging is simple
+                      with our magnetic charging dock - just place the ring on the charger
+                      for 1-2 hours for a full charge. The ring is completely waterproof,
+                      so you never need to remove it except for charging.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div
+                  class="bg-white border border-[var(--light-border-color)] rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300"
+                  data-landingsite-faq-item="">
+                  <button
+                    class="w-full px-6 py-6 text-left flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-inset rounded-2xl"
+                    data-landingsite-faq-question="">
+                    <span class="font-[var(--font-family-heading)] text-lg font-semibold text-[var(--dark-text-color)]">
+                      Is the HealthSync SmartRing compatible with my smartphone?
+                    </span>
+                    <i
+                      class="fa-regular fa-chevron-down text-[var(--primary-color)] transition-transform duration-300"></i>
+                  </button>
+                  <div class="px-6 pb-6" data-landingsite-faq-answer="">
+                    <p class="text-[var(--gray-text-color)] leading-relaxed">
+                      Yes! The HealthSync app is available for both iOS (iPhone 6s and
+                      later) and Android (Android 7.0 and later) devices. The ring
+                      connects via Bluetooth 5.0 for reliable, low-energy communication
+                      with your smartphone.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div
+                  class="bg-white border border-[var(--light-border-color)] rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300"
+                  data-landingsite-faq-item="">
+                  <button
+                    class="w-full px-6 py-6 text-left flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-inset rounded-2xl"
+                    data-landingsite-faq-question="">
+                    <span class="font-[var(--font-family-heading)] text-lg font-semibold text-[var(--dark-text-color)]">
+                      What's included in my purchase and what's the warranty?
+                    </span>
+                    <i
+                      class="fa-regular fa-chevron-down text-[var(--primary-color)] transition-transform duration-300"></i>
+                  </button>
+                  <div class="px-6 pb-6" data-landingsite-faq-answer="">
+                    <p class="text-[var(--gray-text-color)] leading-relaxed">
+                      Your purchase includes the HealthSync SmartRing, magnetic charging
+                      dock, USB-C charging cable, quick start guide, and premium gift box.
+                      Every ring comes with a 2-year manufacturer warranty covering
+                      defects and a 60-day money-back guarantee if you're not completely
+                      satisfied.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div
+                  class="bg-white border border-[var(--light-border-color)] rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300"
+                  data-landingsite-faq-item="">
+                  <button
+                    class="w-full px-6 py-6 text-left flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-inset rounded-2xl"
+                    data-landingsite-faq-question="">
+                    <span class="font-[var(--font-family-heading)] text-lg font-semibold text-[var(--dark-text-color)]">
+                      Can I wear the ring while swimming, showering, or exercising?
+                    </span>
+                    <i
+                      class="fa-regular fa-chevron-down text-[var(--primary-color)] transition-transform duration-300"></i>
+                  </button>
+                  <div class="px-6 pb-6" data-landingsite-faq-answer="">
+                    <p class="text-[var(--gray-text-color)] leading-relaxed">
+                      Absolutely! The HealthSync SmartRing has an IP68 waterproof rating,
+                      meaning you can wear it while swimming, showering, sweating during
+                      workouts, or in any wet environment. It's designed to be worn 24/7
+                      for continuous health monitoring.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Still have questions CTA -->
+              <div
+                class="mt-16 text-center bg-gradient-to-r from-[var(--light-background-color)] to-[var(--medium-background-color)] rounded-3xl p-8">
+                <h3 class="font-[var(--font-family-heading)] text-2xl font-bold text-[var(--dark-text-color)] mb-4">
+                  Still have questions?
+                </h3>
+                <p class="text-[var(--gray-text-color)] mb-6">
+                  Our customer support team is here to help you make the right choice
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                  <a href="/support"
+                    class="inline-flex items-center px-6 py-3 bg-[var(--primary-color)] text-[var(--primary-button-text-color)] rounded-[var(--button-rounded-radius)] font-semibold hover:bg-[var(--primary-button-hover-bg-color)] transition-colors duration-200">
+                    <svg class="mr-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                      </path>
+                    </svg>
+                    Contact Support
+                  </a>
+                  <a href="tel:1-800-HEALTH-SYNC"
+                    class="inline-flex items-center px-6 py-3 border-2 border-[var(--primary-color)] text-[var(--primary-color)] rounded-[var(--button-rounded-radius)] font-semibold hover:bg-[var(--primary-color)] hover:text-white transition-all duration-200">
+                    <svg class="mr-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                      </path>
+                    </svg>
+                    Call Us
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div>
+          <footer id="global-footer" class="code-section bg-[var(--dark-background-color)] text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <!-- Main Footer Content -->
+              <div class="py-16 border-b border-gray-700">
+                <div class="grid lg:grid-cols-4 gap-12">
+                  <!-- Brand Column -->
+                  <div class="lg:col-span-1">
+                    <a href="/" class="block mb-6">
+                      <img
+                        src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2fa4ecf6-0f91-4228-0ae7-aed9bf4ae700/public"
+                        alt="HealthSync SmartRing" class="h-16 py-2" data-logo="">
+                    </a>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                      Medical-grade health insights worn on your finger. Track sleep,
+                      heart rate, and recovery with unmatched accuracy.
+                    </p>
+                    <div class="flex space-x-4">
+                      <a href="#"
+                        class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors duration-200">
+                        <i class="fab fa-facebook-f text-sm"></i>
+                      </a>
+                      <a href="#"
+                        class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors duration-200">
+                        <i class="fab fa-twitter text-sm"></i>
+                      </a>
+                      <a href="#"
+                        class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors duration-200">
+                        <i class="fab fa-instagram text-sm"></i>
+                      </a>
+                      <a href="#"
+                        class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors duration-200">
+                        <i class="fab fa-linkedin text-sm"></i>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Product Column -->
+                  <div>
+                    <h3 class="font-[var(--font-family-heading)] text-lg font-semibold mb-6">
+                      Product
+                    </h3>
+                    <ul class="space-y-4">
+                      <li>
+                        <a href="/how-it-works"
+                          class="text-gray-300 hover:text-white transition-colors duration-200">How It Works</a>
+                      </li>
+                      <li>
+                        <a href="/features"
+                          class="text-gray-300 hover:text-white transition-colors duration-200">Features</a>
+                      </li>
+                      <li>
+                        <a href="/sizing-guide"
+                          class="text-gray-300 hover:text-white transition-colors duration-200">Sizing Guide</a>
+                      </li>
+                      <li>
+                        <a href="/shop" class="text-gray-300 hover:text-white transition-colors duration-200">Shop</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- Support Column -->
+                  <div>
+                    <h3 class="font-[var(--font-family-heading)] text-lg font-semibold mb-6">
+                      Support
+                    </h3>
+                    <ul class="space-y-4">
+                      <li>
+                        <a href="/support" class="text-gray-300 hover:text-white transition-colors duration-200">Support
+                          Center</a>
+                      </li>
+                      <li>
+                        <a href="/support"
+                          class="text-gray-300 hover:text-white transition-colors duration-200">Warranty</a>
+                      </li>
+                      <li>
+                        <a href="/support"
+                          class="text-gray-300 hover:text-white transition-colors duration-200">Returns</a>
+                      </li>
+                      <li>
+                        <a href="/support"
+                          class="text-gray-300 hover:text-white transition-colors duration-200">Shipping</a>
+                      </li>
+                      <li>
+                        <a href="/about" class="text-gray-300 hover:text-white transition-colors duration-200">About
+                          Us</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- Newsletter Column -->
+                  <div>
+                    <h3 class="font-[var(--font-family-heading)] text-lg font-semibold mb-6">
+                      Stay Updated
+                    </h3>
+                    <p class="text-gray-300 mb-6">
+                      Get the latest health insights and product updates
+                    </p>
+                    <form class="space-y-4" data-landingsite-contact-form="">
+                      <div>
+                        <input type="email" name="email" placeholder="Enter your email"
+                          class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-[var(--button-rounded-radius)] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[var(--accent2-color)] focus:border-transparent">
+                      </div>
+                      <button type="submit"
+                        class="w-full bg-gradient-to-r from-[var(--accent2-color)] to-[var(--accent-color)] text-white px-6 py-3 rounded-[var(--button-rounded-radius)] font-semibold hover:shadow-lg transition-all duration-200">
+                        Subscribe
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Trust Indicators -->
+              <div class="py-8 border-b border-gray-700">
+                <div class="flex flex-wrap justify-center lg:justify-between items-center gap-6">
+                  <div class="flex items-center space-x-8">
+                    <div class="flex items-center text-gray-300">
+                      <svg class="w-5 h-5 text-[var(--accent3-color)] mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                          d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      <span class="text-sm">SSL Secure</span>
+                    </div>
+                    <div class="flex items-center text-gray-300">
+                      <svg class="w-5 h-5 text-[var(--accent3-color)] mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      <span class="text-sm">2-Year Warranty</span>
+                    </div>
+                    <div class="flex items-center text-gray-300">
+                      <svg class="w-5 h-5 text-[var(--accent3-color)] mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                          d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      <span class="text-sm">Free Returns</span>
+                    </div>
+                  </div>
+
+                  <!-- Payment Methods -->
+                  <div class="flex items-center space-x-4">
+                    <span class="text-gray-400 text-sm">Secure Payment:</span>
+                    <div class="flex items-center space-x-3">
+                      <div class="w-10 h-6 bg-white/10 rounded border border-white/20 flex items-center justify-center">
+                        <i class="fab fa-cc-visa text-blue-400 text-sm"></i>
+                      </div>
+                      <div class="w-10 h-6 bg-white/10 rounded border border-white/20 flex items-center justify-center">
+                        <i class="fab fa-cc-mastercard text-red-400 text-sm"></i>
+                      </div>
+                      <div class="w-10 h-6 bg-white/10 rounded border border-white/20 flex items-center justify-center">
+                        <i class="fab fa-cc-amex text-blue-300 text-sm"></i>
+                      </div>
+                      <div class="w-10 h-6 bg-white/10 rounded border border-white/20 flex items-center justify-center">
+                        <i class="fab fa-cc-paypal text-blue-500 text-sm"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bottom Footer -->
+              <div class="py-6">
+                <div class="flex flex-col lg:flex-row justify-between items-center">
+                  <div class="text-gray-400 text-sm mb-4 lg:mb-0">
+                    © 2025 HealthSync SmartRing. All rights reserved.
+                  </div>
+                  <div class="flex space-x-6 text-sm">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Terms of
+                      Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Cookie Policy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+      <script src="/embed/main.umd.js"></script>
+    </div>
+  </div>
+</body>
+
+</html>" style="width: 100%; height: 100%; top: 0px;"></iframe>
